@@ -1,3 +1,10 @@
+body{
+  font-family: 'Oswald', sans-serif;
+}
+footer{
+  font-family: 'Oswald', sans-serif;
+}
+
 footer.footer.has-text-centered {
   position: absolute;
   text-align: center;
@@ -8,7 +15,7 @@ footer.footer.has-text-centered {
   font-family: 'Oswald', sans-serif;
   border-radius: 10px;
 }
-.navbar, .columns {
+.columns {
   font-size: 20px;
   font-family: 'Oswald', sans-serif;
 }
