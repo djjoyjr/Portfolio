@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>DJ's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <style>
+      .dj-pics {display:none;}
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="notification has-text-centered">DJ Joy</div>
+    </div>
+
+  <div class="columns">
+    <div class="column is-narrow"></div>
+    <div class="column" id="about-me">
+      <h2 class="section">About Me</h2>
+      <div class="columns">
+          <div class="column" id="photos">
+            <div class="img-responsive">
+              <img class="dj-pics w3-animate-fading" src="./assets/images/djsuitpic.jpg">
+              <img class="dj-pics w3-animate-fading" src="./assets/images/djhg.jpg">
+              <img class="dj-pics w3-animate-fading" src="./assets/images/djak.jpg">
+              <img class="dj-pics w3-animate-fading" src="./assets/images/djwed.jpg">
+              <img class="dj-pics w3-animate-fading" src="./assets/images/djrobot.jpg">
+            </div>
+          </div>
+          <div class="column" id="bio">
+              <p>I'm a philosopher turned web developer, Air Force veteran, dad/husband, and computer geek. I wrote my first computer program at age 6 in BASIC, I've worked with standalone DOS-based terminals, built gaming rigs for myself and friends, installed crude token ring LANs, and been a Crew Commander of a Network Operations Security Center (NOSC) serving 16 Air Force bases and thousands of clients.</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="column is-narrow"></div>
+    <div class="column" id="portfolio">
+      <h2 class="section">Portfolio</h2>
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">Star Wars Game</p>
+            <figure>
+              <a href="https://djjoyjr.github.io/Star-Wars-Game/"><img class="tile-image hvr-bounce-out" src="./assets/images/deathstar.jpeg"  alt="Star Wars themed game."></a>
+            </figure>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">Latchkeyper</p>
+            <figure>
+              <a href="https://djjoyjr.github.io/latchkeyper/"><img class="tile-image hvr-bounce-out" src="./assets/images/atkey.png"  alt="Latchkeyper logo"></a>
+            </figure>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">Pic A or B</p>
+            <figure>
+              <a href="https://picaorb.herokuapp.com/"><img class="tile-image hvr-bounce-out" src="./assets/images/logo.png"  alt="Star Wars themed game"></a>
+            </figure>
+          </article>
+        </div>
+      </div>
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">TV Show gif API</p>
+            <figure>
+              <a href="https://djjoyjr.github.io/giphy-api/"><img class="tile-image hvr-bounce-in" src="./assets/images/oldtv.jpg"  alt="TV Show gif API"></a>
+            </figure>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">BluthMatcher</p>
+            <figure>
+              <a href="https://bluthmatcher.herokuapp.com/"><img class="tile-image hvr-bounce-in" src="./assets/images/Arrested-Development.jpg"  alt="A fun 'matchmaking' app based on the TV show Arrested Development"></a>
+            </figure>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child"></article>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="column is-narrow"></div>
+  </div>
+    <footer class="footer has-text-centered">
+      <a href="https://github.com/djjoyjr"><img src="./assets/images/gh.png" height="65" width="65" alt="GitHub" class="hvr-wobble-vertical" title="Github"></a>
+      <a href="https://www.linkedin.com/in/dj-joy-487816146/"><img src="./assets/images/li.png" height="65" width="65" alt="LinkedIn" class="hvr-wobble-vertical" title="LinkedIn"></a>
+      <a href="https://drive.google.com/open?id=16V0ne_89WfW7qQDtrlEXsNmghcCNrAB4N3y5jPqggG0"><img src="./assets/images/resume.png" height="65" width="65" alt="Resume" class="hvr-wobble-vertical" title="My Resume"></a>
+      <h2>Copyright <a href="mailto:djjoyjr@gmail.com"> DJ Joy </a>2017</h2>
+    </footer>
+  </body>
+</html>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("dj-pics");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 4000); // Change image every 3 seconds
+}
+</script>
