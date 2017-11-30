@@ -6,9 +6,8 @@ footer.footer.has-text-centered {
   color: white;
   background-color: #2f3e4f;
   font-family: 'Oswald', sans-serif;
-  border-radius: 5px;
+  border-radius: 10px;
 }
-
 .navbar, .columns {
   font-size: 20px;
   font-family: 'Oswald', sans-serif;
@@ -43,7 +42,7 @@ h2.section {
   padding: 0;
   background-color: #2f3e4f;
   color: white;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 h2 {
   font-size: 35px;
