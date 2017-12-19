@@ -30,10 +30,9 @@
   </head>
   <body>
 
-    <div class="container">
-      <div class="notification has-text-centered">DJ Joy</div>
-    </div>
-
+  <div class="container">
+    <div class="notification has-text-centered">DJ Joy</div>
+  </div>
   <div class="columns">
     <div class="column is-narrow"></div>
     <div class="column" id="about-me">
@@ -49,20 +48,19 @@
             </div>
           </div>
           <div class="column" id="bio">
-              <p>I'm a philosopher turned web developer, Air Force veteran, dad/husband, and computer geek. I wrote my first computer program at age 6 in BASIC, I've worked with standalone DOS-based terminals, built gaming rigs for myself and friends, installed crude token ring LANs, and been a Crew Commander of a Network Operations Security Center (NOSC) serving 16 Air Force bases and thousands of clients. After dabbling with coding for decades, I decided to make a career out of it.</p>
+              <p>I'm a philosopher turned web developer, Air Force veteran, dad/husband, and computer geek. I wrote my first computer program at age 6 in BASIC, I've worked with standalone DOS-based terminals, built gaming rigs for myself and friends, installed crude token ring LANs, and been a Crew Commander in charge of securing the networks of 16 Air Force bases and thousands of clients. After being a consumer of technology and dabbling with coding for decades, I decided to make a career out of it.</p>
           </div>
       </div>
     </div>
-
     <div class="column is-narrow"></div>
     <div class="column" id="portfolio">
       <h2 class="section">Portfolio</h2>
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <article class="tile is-child box">
-            <p class="title">Star Wars Game</p>
+            <p class="title">Book$tore</p>
             <figure>
-              <a href="https://djjoyjr.github.io/Star-Wars-Game/"><img class="tile-image hvr-bounce-out" src="./assets/images/deathstar.jpeg"  alt="Star Wars themed game."></a>
+              <a href="https://powerful-earth-96795.herokuapp.com/"><img class="tile-image hvr-bounce-in" src="./assets/images/bookstorelogo.png"  alt="Single-page web app for managing your home library"></a>
             </figure>
           </article>
         </div>
@@ -101,12 +99,15 @@
           </article>
         </div>
         <div class="tile is-parent">
-          <article class="tile is-child"></article>
+          <article class="tile is-child box">
+            <p class="title">Star Wars Game</p>
+            <figure>
+              <a href="https://djjoyjr.github.io/Star-Wars-Game/"><img class="tile-image hvr-bounce-out" src="./assets/images/deathstar.jpeg"  alt="Star Wars themed game."></a>
+            </figure>
+          </article>
         </div>
       </div>
-
     </div>
-
     <div class="column is-narrow"></div>
   </div>
     <footer class="footer has-text-centered">
@@ -132,6 +133,6 @@ function carousel() {
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1}
     x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 4000); // Change image every 3 seconds
+    setTimeout(carousel, 4000); // Change image every 4 seconds
 }
 </script>
