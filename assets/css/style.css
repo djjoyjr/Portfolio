@@ -34,6 +34,10 @@ p {
   color: #2f3e4f;
 }
 
+.tile.is-parent {
+  padding: .25rem;
+}
+
 img.dj-pics {
   border-radius: 25px;
   padding: 5px;
